@@ -4,7 +4,7 @@ import { submitRegistration } from '../services/api';
 import './Register.css';
 
 // CSS-only particles - no JS timers needed
-const PARTICLE_COUNT = 15;
+const PARTICLE_COUNT = 25;
 const CSSParticles = () => (
   <div className="css-particles">
     {Array.from({ length: PARTICLE_COUNT }, (_, i) => (
