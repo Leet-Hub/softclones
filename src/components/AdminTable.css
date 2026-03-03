@@ -1,0 +1,122 @@
+.admin-table-container {
+  background: #ffffff;
+  border: 4px solid #2d3436;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0px #2d3436;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background: #2d3436;
+  color: #ffffff;
+}
+
+.admin-table th {
+  padding: 18px 16px;
+  text-align: left;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.admin-table tbody tr {
+  border-bottom: 2px solid #e0e0e0;
+  transition: background 0.3s ease;
+}
+
+.admin-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admin-table td {
+  padding: 16px;
+  font-size: 15px;
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.transaction-id {
+  font-family: 'Courier New', monospace;
+  color: #0984e3;
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.status-pending {
+  background: #ffeaa7;
+  color: #d63031;
+  border-color: #fdcb6e;
+}
+
+.status-verified {
+  background: #55efc4;
+  color: #00b894;
+  border-color: #00b894;
+}
+
+/* Payment Method Badge */
+.payment-method-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border: 2px solid;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-color: #1976d2;
+}
+
+.no-data {
+  padding: 60px 20px;
+  text-align: center;
+  background: #ffffff;
+  border: 4px solid #2d3436;
+  border-radius: 12px;
+}
+
+.no-data p {
+  font-size: 18px;
+  color: #636e72;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .admin-table {
+    font-size: 14px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 8px;
+  }
+
+  .payment-method-badge {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}

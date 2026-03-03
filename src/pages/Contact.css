@@ -1,0 +1,222 @@
+/* Contact Page Styles - Neo-Brutalism Design */
+
+.contact-page {
+  min-height: 100vh;
+  background-color: #f5f1e8;
+  padding: 80px 20px 40px;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+.contact-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* Cards Grid */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual Card */
+.contact-card {
+  background-color: #ffffff;
+  border: 4px solid #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 #1a1a1a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 12px 12px 0 #1a1a1a;
+}
+
+/* Card Header */
+.card-header {
+  background-color: #ffd700;
+  border-bottom: 4px solid #1a1a1a;
+  padding: 1.25rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Contact Item */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item:hover {
+  background-color: #fff5e6;
+  border-color: #ffd700;
+}
+
+/* Contact Icon */
+.contact-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+}
+
+/* Contact Details */
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  word-break: break-word;
+}
+
+/* Event Info Card Accent */
+.event-info-card .card-header {
+  background-color: #90ee90;
+}
+
+/* Quick Note Section */
+.quick-note {
+  background-color: #fff5e6;
+  border: 4px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.quick-note p {
+  margin: 0;
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.quick-note strong {
+  color: #1a1a1a;
+  font-weight: 800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 60px 15px 30px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .contact-value {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    box-shadow: 6px 6px 0 #1a1a1a;
+  }
+
+  .contact-card:hover {
+    box-shadow: 8px 8px 0 #1a1a1a;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    padding: 0.75rem;
+  }
+}
